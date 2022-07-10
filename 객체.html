@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+      <h1>teacher</h1>
+      <h2>Subject</h2>
+      <script>
+        var coworkers = {
+            "JHY" : "P.E.",
+            "MTS" : "Korean"
+        };
+        document.write("JHY : "+coworkers.JHY+ "<br>");
+        document.write("MTS : "+coworkers.MTS+"<br>");
+        coworkers.GD = "physics";
+        document.write("GD : "+coworkers.GD+"<br>");
+        coworkers["KYY"] = "English" ; 
+        document.write("KYY : "+coworkers["KYY"]+"<br>");     
+     </script>
+     <h2>teacher</h2>
+     <script>
+        for(var key in coworkers) {
+            document.write(key+'<br>');
+        }
+     </script>
+    </body>
+</html>
